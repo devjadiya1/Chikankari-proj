@@ -41,7 +41,7 @@ CreateAllFolder();
 
 // Database Connection
 mongoose
-  .connect('mongodb+srv://universeboss78:FoclZvYirga0Do5f@chikankari.bed1l6v.mongodb.net/?retryWrites=true&w=majority&appName=Chikankari', {
+  .connect('process.env.DATABASE', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true,
